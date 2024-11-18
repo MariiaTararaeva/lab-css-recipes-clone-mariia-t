@@ -22,3 +22,38 @@ body {
 
 /* STYLES */
 /* Write your CSS below */
+#content ul li {
+  list-style-Type: none;
+  padding: 0 0 4px 23px;
+  background: none;
+}
+
+ol.style1 {
+  list-style-type: none; 
+  counter-reset: item;
+}
+ol li {
+  counter-increment: item; 
+  margin: 5px 0;
+}
+ol li::before {
+  content: counter(item) ") "; 
+  font-weight: bold; 
+  margin-right: 5px;
+}
+
+ol.style2 {
+  list-style-type: none; 
+  padding-left: 0; 
+  counter-reset: item; 
+}
+ol li {
+  counter-increment: item; 
+  margin: 5px 0;
+}
+ol li::before {
+  content: counter('-') ") "; 
+  color:black;
+  font-weight: lighter; 
+  margin-right: 5px;
+}
